@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Disabling local authentication methods improves security by ensuring that Cosmos DB database accounts exclusively require Azure Active Directory identities for authentication. Learn more at: https://docs.microsoft.com/azure/cosmos-db/how-to-setup-rbac#disable-local-auth.",
     "metadata": {
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "Cosmos DB"
     },
-    "version": "1.1.0",
+    "version": "1.2.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -40,7 +40,6 @@
             "notin": [
               "EnableMongo",
               "EnableCassandra",
-              "EnableTable",
               "EnableGremlin"
             ]
           }
@@ -51,6 +50,7 @@
       }
     },
     "versions": [
+      "1.2.0",
       "1.1.0"
     ]
   },
